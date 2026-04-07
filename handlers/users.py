@@ -16,4 +16,4 @@ async def start(message:types.Message):
 
 @user_r.message()
 async def exo(message:types.Message):
-    await message.answer(message.from_user.text)
+    await message.answer(message.text)
