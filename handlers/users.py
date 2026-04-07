@@ -14,3 +14,6 @@ async def start(message:types.Message):
 async def start(message:types.Message):
     await message.reply(f"Salom {message.from_user.full_name}")
 
+@user_r.message()
+async def exo(message:types.Message):
+    await message.answer(message.from_user.text)
